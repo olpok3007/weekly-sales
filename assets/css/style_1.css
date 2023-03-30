@@ -1,42 +1,43 @@
-* {
-  color: white;
-}
 body {
   background-color: black;
 }
+
 .wrapper {
-  display: inline-block;
-  width: 100%;
-  background-color: #fff;
-  margin: 50vh auto;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30vh auto;
+  background-color: white;
   height: 300px;
+ 
 }
 .section {
-  width: 30%;
-  display: inline-block;
-  background-color: rebeccapurple;
-  border-radius: 8px;
-  position: absolute;
-  height: 290px;
-  margin: 5px;
-  overflow: hidden;
-}
-h1,
-p {
-  padding-left: 40px;
-  padding-top: 10px;
-  font-size: large;
+width: 30vw;
+margin: 20px;
+display: flex;
+flex-direction: column;
+justify-content: space-evenly;
+overflow: hidden;
+border-radius: 10px;
+ 
 }
 img {
   width: 20px;
   height: 20px;
   position: absolute;
-  right: 20px;
-  top: 20px;
+  right: 30px;
+  top: 30px; 
 }
+h1,
+section,
+p,
+img {
+  padding-left: 20px;
+  color: white;
+  font-size: x-large;
+}
+
 .sales {
-  position: absolute;
-  left: 10px;
+  position: relative;
   background: rgb(221, 190, 173);
   background: linear-gradient(
     90deg,
@@ -46,60 +47,13 @@ img {
   );
 }
 
-.orders {
-  position: absolute;
-  left: 35%;
-  background: rgb(123, 198, 240);
-  background: linear-gradient(
-    90deg,
-    rgba(123, 198, 240, 1) 7%,
-    rgba(80, 178, 233, 1) 31%,
-    rgba(23, 131, 191, 1) 59%,
-    rgba(23, 131, 191, 1) 86%
-  );
-}
-.visitors {
-  position: absolute;
-  right: 10px;
-  background: rgb(199, 233, 80);
-  background: linear-gradient(
-    90deg,
-    rgba(199, 233, 80, 1) 9%,
-    rgba(199, 233, 80, 1) 28%,
-    rgba(151, 217, 96, 1) 54%,
-    rgba(84, 195, 118, 1) 79%
-  );
-}
-.round_pink_2::after {
-  content: "";
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-
-  position: absolute;
-  right: -20px;
-  bottom: -30px;
-  background: rgb(233, 183, 184);
-  background: linear-gradient(
-    90deg,
-    rgba(233, 183, 184, 0) 0%,
-    rgba(241, 202, 203, 1) 18%,
-    rgba(242, 178, 180, 1) 29%,
-    rgba(235, 163, 165, 1) 36%,
-    rgba(219, 130, 133, 1) 54%,
-    rgba(219, 130, 133, 1) 68%,
-    rgba(221, 63, 69, 1) 100%
-  );
-}
 .round_pink_1::before {
   content: "";
   width: 200px;
   height: 200px;
-
   border-radius: 50%;
-  /* border: 1px solid rebeccapurple; */
   position: absolute;
-  right: -80px;
+  right: -50px;
   top: -10px;
   background: rgb(233, 183, 184);
   background: linear-gradient(
@@ -114,14 +68,46 @@ img {
   );
 }
 
+.round_pink_2::after {
+  content: "";
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  position: absolute;
+  right: -10px;
+  bottom: -50px;
+  background: rgb(233, 183, 184);
+  background: linear-gradient(
+    90deg,
+    rgba(233, 183, 184, 0) 0%,
+    rgba(241, 202, 203, 1) 18%,
+    rgba(242, 178, 180, 1) 29%,
+    rgba(235, 163, 165, 1) 36%,
+    rgba(219, 130, 133, 1) 54%,
+    rgba(219, 130, 133, 1) 68%,
+    rgba(221, 63, 69, 1) 100%
+  );
+}
+
+.orders {
+  position: relative;
+  background: rgb(123, 198, 240);
+  background: linear-gradient(
+    90deg,
+    rgba(123, 198, 240, 1) 7%,
+    rgba(80, 178, 233, 1) 31%,
+    rgba(23, 131, 191, 1) 59%,
+    rgba(23, 131, 191, 1) 86%
+  );
+}
+
 .round_blue_1::before {
   content: "";
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  /* border: 1px solid rebeccapurple; */
   position: absolute;
-  right: -80px;
+  right: -50px;
   top: -10px;
   background: rgb(63, 191, 221);
   background: linear-gradient(
@@ -139,10 +125,9 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-
   position: absolute;
-  right: -20px;
-  bottom: -30px;
+  right: -10px;
+  bottom: -50px;
   background: rgb(63, 191, 221);
   background: linear-gradient(
     90deg,
@@ -153,15 +138,26 @@ img {
     rgba(12, 56, 157, 1) 100%
   );
 }
+.visitors {
+  position: relative;
+  background: rgb(199, 233, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(199, 233, 80, 1) 9%,
+    rgba(199, 233, 80, 1) 28%,
+    rgba(151, 217, 96, 1) 54%,
+    rgba(84, 195, 118, 1) 79%
+  );
+}
+
 
 .round_green_1::before {
   content: "";
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  /* border: 1px solid rebeccapurple; */
   position: absolute;
-  right: -80px;
+  right: -50px;
   top: -10px;
   background: rgb(172, 228, 125);
   background: linear-gradient(
@@ -179,10 +175,9 @@ img {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-
   position: absolute;
-  right: -20px;
-  bottom: -30px;
+  right: -10px;
+  bottom: -50px;
   background: rgb(172, 228, 125);
   background: linear-gradient(
     90deg,
@@ -193,6 +188,8 @@ img {
     rgba(26, 194, 26, 1) 100%
   );
 }
+
+
 ::after,
 ::before {
   opacity: 0.5;
@@ -202,5 +199,5 @@ img {
 :hover::after {
   transition: all 2s;
   background: rgb(231, 139, 219);
-  opacity: 1;
+  opacity: 0.7;
 }
