@@ -9,7 +9,7 @@ body {
   width: 100%;
   background-color: #fff;
   margin: 50vh auto;
-  height: 160px;
+  height: 300px;
 }
 .section {
   width: 30%;
@@ -17,7 +17,7 @@ body {
   background-color: rebeccapurple;
   border-radius: 8px;
   position: absolute;
-  height: 150px;
+  height: 290px;
   margin: 5px;
   overflow: hidden;
 }
@@ -48,7 +48,7 @@ img {
 
 .orders {
   position: absolute;
-  left: 34%;
+  left: 35%;
   background: rgb(123, 198, 240);
   background: linear-gradient(
     90deg,
@@ -72,13 +72,13 @@ img {
 }
 .round_pink_2::after {
   content: "";
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 
   position: absolute;
-  right: -25px;
-  bottom: -70px;
+  right: -20px;
+  bottom: -30px;
   background: rgb(233, 183, 184);
   background: linear-gradient(
     90deg,
@@ -93,8 +93,8 @@ img {
 }
 .round_pink_1::before {
   content: "";
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
 
   border-radius: 50%;
   /* border: 1px solid rebeccapurple; */
@@ -116,8 +116,8 @@ img {
 
 .round_blue_1::before {
   content: "";
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   /* border: 1px solid rebeccapurple; */
   position: absolute;
@@ -136,13 +136,13 @@ img {
 
 .round_blue_2::after {
   content: "";
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 
   position: absolute;
-  right: -25px;
-  bottom: -70px;
+  right: -20px;
+  bottom: -30px;
   background: rgb(63, 191, 221);
   background: linear-gradient(
     90deg,
@@ -156,8 +156,8 @@ img {
 
 .round_green_1::before {
   content: "";
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   /* border: 1px solid rebeccapurple; */
   position: absolute;
@@ -176,13 +176,13 @@ img {
 
 .round_green_2::after {
   content: "";
-  width: 160px;
-  height: 160px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
 
   position: absolute;
-  right: -25px;
-  bottom: -70px;
+  right: -20px;
+  bottom: -30px;
   background: rgb(172, 228, 125);
   background: linear-gradient(
     90deg,
